@@ -55,6 +55,7 @@ const Registration = () => {
   useEffect(() => {
     if (Object.keys(formErrors).length === 0 && isSubmit) {
       console.log(formValues);
+      setFormValues(initialValues);
     }
   }, [formErrors, formValues, isSubmit]);
 
